@@ -9,6 +9,10 @@ body {
   margin: 0 auto;
 }
 
+header {
+  display: none;
+}
+
 .hero-section {
   margin-top: 2%;
 }
@@ -270,5 +274,62 @@ footer h5 {
   font-weight: normal;
   color: #bfbfbf;
   text-align: center;
+}
+
+@media only screen and (max-width: 769px) {
+  header {
+    display: inline;
+  }
+  header .container img {
+    height: 2em;
+    float: left;
+  }
+  .hero-section .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .hero-section .container img {
+    display: none;
+  }
+  .banner {
+    display: none;
+  }
+  .form-section {
+    margin-top: 5%;
+    width: 100%;
+    padding-bottom: 5%;
+  }
+  label {
+    font-size: 14px;
+  }
+  .each-career-point {
+    width: 50%;
+  }
+  .each-career-point h4 {
+    font-size: 13px;
+  }
+  .company-info p {
+    width: 100%;
+    font-size: 14px;
+  }
+  .download-guide {
+    display: inline;
+  }
+  .download-guide h3 {
+    margin-bottom: 5%;
+    font-size: 22px;
+  }
+  .details .container h6 {
+    margin-top: 5%;
+    font-size: 12px;
+  }
+  .career-hi-light h2 {
+    font-size: 24px;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
